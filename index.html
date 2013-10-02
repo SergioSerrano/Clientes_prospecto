@@ -73,31 +73,135 @@
 <body> 
 <!-- pagina principal -->
     
-<div data-role="page" id="encuesta"  >
+<div data-role="page" id="form1"  data-theme="b" >
 	<div data-role="header" data_theme="a">
 		<h1>Victorinox México</h1>
 	</div>
+    <div  class="logo" >
+    <img src="css/images/logoVictorinox.png" width="180px" height="100%" alt="VICTORINOX" style="right:0px;"> 
+    
+    </div> 
 	<div data-role="content" data-theme="b" style=" top:600 ;alignment-adjust:central; vertical-align:central; text-align:center" >
-	<div style="top:600">
-	  <a href="#pregunta111" data-role="button" data-icon="arrow-r" data-theme="c" style="vertical-align:bottom">Iniciar Encuesta</a>
-    
-	
-      
-      
-      
-      
-    
-	</div>
 	
     
 	
-	
+	  <div data-role="fieldcontain" data-theme="b">
+	    <div data-role="fieldcontain" data-theme="b">
+	      <label for="textinput" data-theme="b">Nombre:</label>
+	      <input type="text" name="textinput" id="nombre" value=""  />
+        </div>
+        <div data-role="fieldcontain" data-theme="b">
+	      <label for="textinput" data-theme="b">Direccion:</label>
+	      <input type="text" name="textinput" id="direccion" value=""  />
+        </div>
+        <div data-role="fieldcontain" data-theme="b">
+	      <label for="textinput" data-theme="b">Ciudad:</label>
+	      <input type="text" name="textinput" id="ciudad" value=""  />
+        </div>
+        <div data-role="fieldcontain" data-theme="b">
+          <label for="selectmenu" class="select" data-theme="b">Estado:</label>
+          <select name="selectmenu" id="estado" data-theme="b">
+            <option value="Aguascalientes">Aguascalientes</option>
+            <option value="Baja California">Baja California</option>
+            <option value="Baja California Sur">Baja California Sur</option>
+            <option value="Campeche">Campeche</option>
+            <option value="Chiapas">Chiapas</option>
+            <option value="Chihuahua">Chihuahua</option>
+              <option value="Coahuila">Coahuila</option>
+              <option value="Colima">Colima</option>
+              <option value="Distrito Federal">Distrito Federal</option>
+              <option value="Durango">Durango</option>
+              <option value="Estado de México">Estado de México</option>
+              <option value="Guanajuato">Guanajuato</option>
+              <option value="Guerrero">Guerrero</option>
+              <option value="Hidalgo">Hidalgo</option>
+              <option value="Jalisco">Jalisco</option>
+              <option value="Michoacán">Michoacán</option>
+              <option value="Morelos">Morelos</option>
+              <option value="Nayarit">Nayarit</option>
+              <option value="Nuevo León">Nuevo León</option>
+              <option value="Oaxaca">Oaxaca</option>
+              <option value="Puebla">Puebla</option>
+              <option value="Querétaro">Querétaro</option>
+              <option value="Quintana Roo">Quintana Roo</option>
+              <option value="San Luis Potosí">San Luis Potosí</option>
+              <option value="Sinaloa">Sinaloa</option>
+              <option value="Sonora">Sonora</option>
+              <option value="Tabasco">Tabasco</option>
+              <option value="Tamaulipas">Tamaulipas</option>
+              <option value="Tlaxcala">Tlaxcala</option>
+              <option value="Veracruz">Veracruz</option>
+              <option value="Yucatán">Yucatán</option>
+              <option value="Zacatecas">Zacatecas</option>
+            
+
+
+
+
+          </select>
+          </div>
+        
+          <div data-role="fieldcontain" data-theme="b">
+	      <label for="textinput" data-theme="b">Telefono:</label>
+	      <input type="text" name="textinput" id="telefono" value=""  />
+        </div>
+        <div data-role="fieldcontain" data-theme="b">
+	      <label for="textinput" data-theme="b">Email:</label>
+	      <input type="text" name="textinput" id="email" value=""  />
+        
+        </div>
+        
+         <div data-role="fieldcontain" data-theme="b">
+	      <label for="textinput" data-theme="b">Empresa:</label>
+	      <input type="text" name="textinput" id="empresa" value=""  />
+        
+        </div>
+         <div data-role="fieldcontain" data-theme="b">
+	      <label for="textinput" data-theme="b">Puesto:</label>
+	      <input type="text" name="textinput" id="puesto" value=""  />
+          </div>
+	      <div data-role="fieldcontain" data-theme="b">
+	        <fieldset data-role="controlgroup" data-theme="b">
+	          <legend>Le interesa recibir nuestros:</legend>
+	          <input type="checkbox" name="checkbox1" id="checkbox1_0" class="custom" value="catalogo" />
+	          <label for="checkbox1_0">Cátalogo</label>
+	          <input type="checkbox" name="checkbox1" id="checkbox1_1" class="custom" value="promociones" />
+	          <label for="checkbox1_1">Promociones</label>
+	          <input type="checkbox" name="checkbox1" id="checkbox1_2" class="custom" value="invitacion a eventos" />
+	          <label for="checkbox1_2">Invitacion a futuros eventos </label>
+            </fieldset>
+           </div>
+	      <div data-role="fieldcontain" data-theme="b">
+	        <fieldset data-role="controlgroup" data-theme="b">
+	          <legend>¿Cuales son las lineas que le interesan?</legend>
+	          <input type="checkbox" name="checkbox2" id="checkbox2_0" class="custom" value="Victorinox" />
+	          <label for="checkbox2_0">Victorinox: navajas, relojes, cuchillos y equipaje</label>
+	          <input type="checkbox" name="checkbox2" id="checkbox2_1" class="custom" value="Maglite" />
+	          <label for="checkbox2_1">Maglite: linternas</label>
+	          <input type="checkbox" name="checkbox2" id="checkbox2_2" class="custom" value="Celestron" />
+	          <label for="checkbox2_2">Celestron: telescopios, binoculares, y microscopios</label>
+	          <input type="checkbox" name="checkbox2" id="checkbox2_3" class="custom" value="Felco" />
+	          <label for="checkbox2_3">Felco: podaderas y cizallas</label>
+	          <input type="checkbox" name="checkbox2" id="checkbox2_4" class="custom" value="Wenger" />
+	          <label for="checkbox2_4">Wenger: navajas, cuchillos y relojes</label>
+            </fieldset>
+           </div>
+           
+          
+        
+        
+       
+	  </div>
+      
+    
+
 	
     		
 	</div>
     
     
-	<div data-role="footer"  data-theme="b" style="  text-align:center;" data-position="fixed">
+	<<div data-role="footer" style="text-align:center;"  data-position="fixed" data-theme="b">
+      <img src="css/images/plecaVictorinox.jpg" width="100%" height="20px" alt="Texto Alternativo"> 
         <a data-role="button" data-theme="b" href="#nosotros" class="ui-btn-left" data-transition="slideup">Nosotros</a>
         <span style="font-size: 8pt;">Todos los derechos reservados &copy;</span>
 	</div>
@@ -118,14 +222,14 @@
 	</div>
 
 
-<!-- pagina consultas -->
+
 
 
 <div data-role="footer" data-position="fixed" data-theme="b">
     </div>
     </div>
      
-    
+  <!-- pagina consultas  
 <div data-role="page" id="pregunta111"  style="text-align:center; height: 100%;"  data-theme="b">
 <div data-role="header" data_theme="a">
 		<h1>Victorinox México</h1>
@@ -409,7 +513,7 @@
         <a data-role="button" data-theme="b" href="#nosotros" class="ui-btn-left" data-transition="slideup">Nosotros</a>
         <span style="font-size: 8pt;">Todos los derechos reservados &copy;</span>
 	</div>
-    </div>
+    </div>--> 
    
 
 </body>

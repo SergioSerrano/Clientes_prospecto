@@ -7,7 +7,7 @@ $(document).ready(function(e){
 
 	document.addEventListener("deviceready", function(){
 		
-			window.location.href = '#pregunta111';
+			window.location.href = '#form1';
 	
 	/*   $('#regSend').tap(function(){
 		  if($('#regNom').val()!='' && $('#regTel').val()!='' && $('#regMail').val()!='' ){
