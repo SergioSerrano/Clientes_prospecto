@@ -33,7 +33,7 @@
   }
   div.abs2 {
   margin:auto; 
-  width:754px;
+  width:500px;
   text-align:center;
   }
 
@@ -84,18 +84,19 @@
 	<div data-role="content" data-theme="b" style=" top:600 ;alignment-adjust:central; vertical-align:central; text-align:center" >
 	
     
-	
-	  <div data-role="fieldcontain" data-theme="b">
+	<div class="abs">
+        <div class="abs2">
+	  <div data-role="fieldcontain" style="text-align: right;" data-theme="b">
 	    <div data-role="fieldcontain" data-theme="b">
-	      <label for="textinput" data-theme="b">Nombre:     </label>
+	      <label for="textinput" data-theme="b">Nombre:</label>
 	      <input type="text" name="textinput" id="nombre" value=""  />
         </div>
-        <div data-role="fieldcontain" data-theme="b">
-	      <label for="textinput" data-theme="b">Direccion:  </label>
-	      <input type="text" name="textinput" id="direccion" value=""  />
+        <div data-role="fieldcontain" style="text-align: right;" data-theme="b">
+	      <label for="textinput" data-theme="b">Direccion:</label>
+	      <input style="left:0" type="text" name="textinput" id="direccion" value=""  />
         </div>
-        <div data-role="fieldcontain" data-theme="b">
-	      <label for="textinput" data-theme="b">Ciudad:     </label>
+        <div data-role="fieldcontain" style="text-align: right;" data-theme="b">
+	      <label for="textinput" data-theme="b">Ciudad:</label>
 	      <input type="text" name="textinput" id="ciudad" value=""  />
         </div>
         <div data-role="fieldcontain" data-theme="b">
@@ -142,22 +143,22 @@
           </div>
         
           <div data-role="fieldcontain" data-theme="b">
-	      <label for="textinput" data-theme="b">Telefono:   </label>
+	      <label for="textinput" data-theme="b">Telefono:</label>
 	      <input type="text" name="textinput" id="telefono" value=""  />
         </div>
         <div data-role="fieldcontain" data-theme="b">
-	      <label for="textinput" data-theme="b">Email:      </label>
+	      <label for="textinput" data-theme="b">Email:</label>
 	      <input type="text" name="textinput" id="email" value=""  />
         
         </div>
         
          <div data-role="fieldcontain" data-theme="b">
-	      <label for="textinput" data-theme="b">Empresa:    </label>
+	      <label for="textinput" data-theme="b">Empresa:</label>
 	      <input type="text" name="textinput" id="empresa" value=""  />
         
         </div>
          <div data-role="fieldcontain" data-theme="b">
-	      <label for="textinput" data-theme="b">Puesto:     </label>
+	      <label for="textinput" data-theme="b">Puesto:</label>
 	      <input type="text" name="textinput" id="puesto" value=""  />
           </div>
 	      <div data-role="fieldcontain" data-theme="b">
@@ -174,16 +175,16 @@
 	      <div data-role="fieldcontain" data-theme="b">
 	        <fieldset data-role="controlgroup" data-theme="b">
 	          <legend>¿Cuales son las lineas que le interesan?</legend>
-	          <input type="checkbox" name="checkbox2" id="checkbox2_0" class="custom" value="Victorinox" />
-	          <label for="checkbox2_0">Victorinox: navajas, relojes, cuchillos y equipaje</label>
-	          <input type="checkbox" name="checkbox2" id="checkbox2_1" class="custom" value="Maglite" />
-	          <label for="checkbox2_1">Maglite: linternas</label>
-	          <input type="checkbox" name="checkbox2" id="checkbox2_2" class="custom" value="Celestron" />
-	          <label for="checkbox2_2">Celestron: telescopios, binoculares, y microscopios</label>
-	          <input type="checkbox" name="checkbox2" id="checkbox2_3" class="custom" value="Felco" />
-	          <label for="checkbox2_3">Felco: podaderas y cizallas</label>
-	          <input type="checkbox" name="checkbox2" id="checkbox2_4" class="custom" value="Wenger" />
-	          <label for="checkbox2_4">Wenger: navajas, cuchillos y relojes</label>
+	          <input type="checkbox"  data-theme="b" name="checkbox2" id="checkbox2_0"  value="Victorinox" />
+	          <label for="checkbox2_0" data-theme="b">Victorinox: navajas, relojes, cuchillos y equipaje</label>
+	          <input type="checkbox" data-theme="b" name="checkbox2" id="checkbox2_1"  value="Maglite" />
+	          <label for="checkbox2_1" data-theme="b">Maglite: linternas</label>
+	          <input type="checkbox" data-theme="b" name="checkbox2" id="checkbox2_2"  value="Celestron" />
+	          <label for="checkbox2_2" data-theme="b">Celestron: telescopios, binoculares, y microscopios</label>
+	          <input type="checkbox" data-theme="b" name="checkbox2" id="checkbox2_3"  value="Felco" />
+	          <label for="checkbox2_3" data-theme="b">Felco: podaderas y cizallas</label>
+	          <input type="checkbox" data-theme="b" name="checkbox2" id="checkbox2_4" value="Wenger" />
+	          <label for="checkbox2_4" data-theme="b">Wenger: navajas, cuchillos y relojes</label>
             </fieldset>
            </div>
            
@@ -196,15 +197,33 @@
     
 
 	
-    		
+    </div>		
 	</div>
+         <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#pregunta111" data-transition="none" data-theme="c" id="cancela">
+                        Cancelar
+                    </a>
+                </li>
+                <li>
+                    <a data-theme="c" href="#" data-transition="none" id="guarda">
+                        Guardar
+                    </a>
+                </li>
+                
+            </ul>
+            
+     
+      </div>
+    </div>
     
-    
-	<<div data-role="footer" style="text-align:center;"  data-position="fixed" data-theme="b">
+	<div data-role="footer" style="text-align:center;"  data-position="fixed" data-theme="b">
       <img src="css/images/plecaVictorinox.jpg" width="100%" height="20px" alt="Texto Alternativo"> 
         <a data-role="button" data-theme="b" href="#nosotros" class="ui-btn-left" data-transition="slideup">Nosotros</a>
         <span style="font-size: 8pt;">Todos los derechos reservados &copy;</span>
 	</div>
+       
 </div>
 
 <!-- pagina 'nosotros' -->
