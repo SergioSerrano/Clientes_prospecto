@@ -105,7 +105,8 @@ $(document).ready(function (e) {
 			} else {
 				guardatempcalif(valrad1, valrad2, valrad3, valrad4, valrad5);
 			}
-			}else{return false;}
+			}
+			return false;
 
 			
 
