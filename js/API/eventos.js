@@ -47,7 +47,7 @@ $(document).ready(function (e) {
 			var cont = getCookie("indice");
 
 			var valnombre = $('#nombre').val();
-			if (!valrad1) {
+			if (!valnombre) {
 				alert("Favor de escribir tu nombre");
 				return false;
 			}
@@ -58,11 +58,16 @@ $(document).ready(function (e) {
 				return false;
 			}
 			var valciudad = $('#ciudad').val();
-			if (!valrad1) {
+			if (!valciudad) {
 				alert("Favor de escribir tu nombre");
 				return false;
 			}
+			var valestado=$('#estado').val();
 			
+			if (!valestado) {
+				alert("Favor de seleccionar tu estado");
+				return false;
+			}
 		
 			var valrad2 = $('input:radio[name=pregunta2]:checked').val();
 			if (!valrad2) {
