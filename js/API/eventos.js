@@ -46,9 +46,25 @@ $(document).ready(function (e) {
 
 			var cont = getCookie("indice");
 
-			var valrad1 = $('#nombre').val();
+			var valnombre = $('#nombre').val();
 			if (!valrad1) {
 				alert("Favor de escribir tu nombre");
+				return false;
+			}
+			
+			var valdireccion = $('#direccion').val();
+			if (!valdireccion) {
+				alert("Favor de escribir tu direccion");
+				return false;
+			}
+			var valciudad = $('#ciudad').val();
+			if (!valrad1) {
+				alert("Favor de escribir tu nombre");
+				return false;
+			}
+			var valestado=$('#estado').val();
+			if (!valestado) {
+				alert("Favor de seleccionar estado");
 				return false;
 			}
 			var valrad2 = $('input:radio[name=pregunta2]:checked').val();
