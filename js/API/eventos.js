@@ -33,7 +33,7 @@ $(document).ready(function (e) {
 		//---------------guarda encuesta
 
 		$('#guarda').tap(function () {
-
+			var exito=true;
 			var check = getCookie("indice");
 			if (check != null && check != "") {
 
@@ -49,49 +49,50 @@ $(document).ready(function (e) {
 			var valnombre = $('#nombre').val();
 			if (!valnombre) {
 				alert("Favor de escribir tu nombre");
-				return false;
+				exito= false;
 			}
 			
 			var valdireccion = $('#direccion').val();
 			if (!valdireccion) {
 				alert("Favor de escribir tu direccion");
-				return false;
+				exito= false;
 			}
 			var valciudad = $('#ciudad').val();
 			if (!valciudad) {
 				alert("Favor de escribir tu nombre");
-				return false;
+				exito= false;
 			}
 			var valestado=$('#estado').val();
 			
 			if (valestado) {
 				alert(valestado);
-				return false;
+			
 			}
 		
 			var valrad2 = $('input:radio[name=pregunta2]:checked').val();
 			if (!valrad2) {
 				alert("Please select your option on pregunta2.");
-				return false;
+				exito= false;
 			}
 			var valrad3 = $('input:radio[name=pregunta3]:checked').val();
 			if (!valrad3) {
 				alert("Please select your option on pregunta3.");
-				return false;
+				exito= false;
 			}
 			var valrad4 = $('input:radio[name=pregunta4]:checked').val();
 			if (!valrad4) {
 				alert("Please select your option on pregunta4.");
-				return false;
+				exito= false;
 			}
 			var valrad5 = $('input:radio[name=pregunta5]:checked').val();
 			if (!valrad5) {
 				alert("Please select your option on pregunta 5.");
-				return false;
+				exito= false;
 			}
 
 
-
+			if (exito)
+			{
 			if (isConnected()) {
 
 				var msg = guarda_calif(valrad1, valrad2, valrad3, valrad4, valrad5, cont);
@@ -103,6 +104,7 @@ $(document).ready(function (e) {
 				leeresarvas2();
 			} else {
 				guardatempcalif(valrad1, valrad2, valrad3, valrad4, valrad5);
+			}
 			}
 
 			
