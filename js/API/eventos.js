@@ -62,7 +62,7 @@ else
 
 		var cont=getCookie("indice");
 		
-		  var valrad1 = $('input:textinput[name=nombre]').val();
+		  var valrad1 = $('#nombre').val();
 			if ( !valrad1 ) {
    	 			alert("Favor de escribir tu nombre");
     			return false;
