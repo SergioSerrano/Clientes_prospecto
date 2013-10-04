@@ -8,11 +8,16 @@
     <name>Clientes Prospecto</name>
  
     <description>
-        A simple employee directory application
+       Clientes Prospecto Victorinox
     </description>
  
-    <author  email="pepes17@hotmail.com">
-        Sergio Serrano
+    <author  email="pepes17@hotmail.com" >
+        Sergio Serrano 
+		<br email="nidbep@hotmail.com">
+			nidia benitez
+		</br>
+		
+	
     </author>
  
     <feature name="http://api.phonegap.com/1.0/camera"/>
