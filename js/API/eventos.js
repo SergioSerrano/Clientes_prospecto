@@ -53,9 +53,9 @@ $(document).ready(function (e) {
 			}
 			
 			var valdireccion = $('#direccion').val();
-			if (valdireccion) {
-				alert(valdireccion);
-			
+			if (!valdireccion) {
+				alert("Favor de escribir tu direccion");
+				return false;
 			}
 			var valciudad = $('#ciudad').val();
 			if (!valciudad) {
@@ -64,8 +64,8 @@ $(document).ready(function (e) {
 			}
 			var valestado=$('#estado').val();
 			
-			if (!valestado) {
-				alert("Favor de seleccionar tu estado");
+			if (valestado) {
+				alert(valestado);
 				return false;
 			}
 		
