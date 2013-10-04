@@ -62,9 +62,9 @@ else
 
 		var cont=getCookie("indice");
 		
-		  var valrad1 = $('input:radio[name=pregunta1]:checked').val();
+		  var valrad1 = $('input:text[name=nombre]:checked').val();
 			if ( !valrad1 ) {
-   	 			alert("Please select your option on pregunta1.");
+   	 			alert("Favor de escribir tu nombre");
     			return false;
 			}
 			var valrad2 = $('input:radio[name=pregunta2]:checked').val();
