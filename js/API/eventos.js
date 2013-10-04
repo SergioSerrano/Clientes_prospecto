@@ -53,9 +53,9 @@ $(document).ready(function (e) {
 			}
 			
 			var valdireccion = $('#direccion').val();
-			if (!valdireccion) {
-				alert("Favor de escribir tu direccion");
-				return false;
+			if (valdireccion) {
+				alert(valdireccion);
+			
 			}
 			var valciudad = $('#ciudad').val();
 			if (!valciudad) {
