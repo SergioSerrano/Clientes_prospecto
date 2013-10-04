@@ -67,6 +67,7 @@ $(document).ready(function (e) {
 				alert("Favor de seleccionar estado");
 				return false;
 			}
+			else{alert(valestado)}
 			var valrad2 = $('input:radio[name=pregunta2]:checked').val();
 			if (!valrad2) {
 				alert("Please select your option on pregunta2.");
