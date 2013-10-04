@@ -62,11 +62,7 @@ $(document).ready(function (e) {
 				alert("Favor de escribir tu nombre");
 				return false;
 			}
-			var valestado=$('#estado').val();
-			if (!valestado) {
-				alert("Favor de seleccionar estado");
-				return false;
-			}
+			
 		
 			var valrad2 = $('input:radio[name=pregunta2]:checked').val();
 			if (!valrad2) {
