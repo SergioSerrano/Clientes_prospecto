@@ -91,7 +91,7 @@ $(document).ready(function (e) {
 				valpuesto=" ";
 			}
 		
-			var check_vx = $('input:checkbox[name=checkbox1_0]:checked');
+			var check_vx = $('input:checkbox[name=checkbox1_0]:checked').val();
 			
 			
 			alert(check_vx);
