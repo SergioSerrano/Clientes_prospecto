@@ -69,6 +69,7 @@ $(document).ready(function (e) {
 				alert("Favor de escribir tu ciudad");
 				exito= false;
 			}
+		
 			
 			var valphone = $('#telefono').val();
 			if (!valphone) {
@@ -97,6 +98,7 @@ $(document).ready(function (e) {
 				valpuesto=" ";
 			}
 		// inter3es
+			var valcat=0;
 			var check_cat =  $("#checkbox1_0").is(":checked");
 			if (check_cat)
 			{
@@ -107,6 +109,7 @@ $(document).ready(function (e) {
 				valcat=0;
 				exito= false;
 			}
+			var valpro=0;
 			var check_pro =  $("#checkbox1_1").is(":checked");
 			if (check_pro)
 			{
@@ -117,6 +120,7 @@ $(document).ready(function (e) {
 				valpro=0;
 				exito= false;
 			}
+			var valinv=0;
 			var check_inv =  $("#checkbox1_2").is(":checked");
 			if (check_inv)
 			{
@@ -131,6 +135,7 @@ $(document).ready(function (e) {
 			
 			//lineas
 			
+			var valvx=0;
 			var check_vx =  $("#checkbox1_2").is(":checked");
 			if (check_vx)
 			{
@@ -141,7 +146,7 @@ $(document).ready(function (e) {
 				valvx=0;
 				exito= false;
 			}
-			
+			var valmgl=0;
 			var check_mgl =  $("#checkbox1_2").is(":checked");
 			if (check_mgl)
 			{
@@ -152,7 +157,7 @@ $(document).ready(function (e) {
 				valmgl=0;
 				exito= false;
 			}
-			
+			var valcel=0;
 			var check_cel =  $("#checkbox1_2").is(":checked");
 			if (check_cel)
 			{
@@ -163,7 +168,7 @@ $(document).ready(function (e) {
 				valcel=0;
 				exito= false;
 			}
-			
+			var valfel=0;
 			var check_fel =  $("#checkbox1_2").is(":checked");
 			if (check_fel)
 			{
@@ -175,6 +180,7 @@ $(document).ready(function (e) {
 				exito= false;
 			}
 			
+			var valwen=0;
 			var check_wen =  $("#checkbox1_2").is(":checked");
 			if (check_wen)
 			{
@@ -210,7 +216,7 @@ $(document).ready(function (e) {
 			{
 			if (isConnected()) {
 
-				var msg = guarda_calif(valrad1, valrad2, valrad3, valrad4, valrad5, cont);
+				var msg = guarda_cliente(valnombre, valdireccion, valciudad, valestado,valcp, valphone,valemail,valempresa,valpuesto,valcat,valpro,valinv,valvx,valmgl,valcel,valfel,valwen, cont);
 				var cont2 = parseInt(cont) + 1;
 				cont = cont2.toString();
 				setCookie("indice", cont, 365);
