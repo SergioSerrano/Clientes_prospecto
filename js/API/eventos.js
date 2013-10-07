@@ -92,14 +92,12 @@ $(document).ready(function (e) {
 			}
 		
 			var check_vx = $('input:checkbox[name=checkbox1_0]:checked').val();
+			alert(check_vx);
 			if (!check_vx) {
 				check_vx="";
 				exito= false;
 			}
-			else
-			{
-				alert(check_vx);
-			}
+			
 			
 			var valrad2 = $('input:radio[name=pregunta2]:checked').val();
 			if (!valrad2) {
