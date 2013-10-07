@@ -59,21 +59,54 @@ $(document).ready(function (e) {
 			}
 			var valciudad = $('#ciudad').val();
 			if (!valciudad) {
-				alert("Favor de escribir tu nombre");
+				alert("Favor de escribir tu ciudad");
 				exito= false;
 			}
-			var valestado=$('#estado').val();
 			
-			if (valestado) {
-				alert(valestado);
 			
+			var valphone = $('#telefono').val();
+			if (!valphone) {
+				alert("Favor de escribir tu numero telefonico");
+				exito= false;
+			}
+			var valemail = $('#email').val();
+			if (!valemail) {
+				alert("Favor de escribir tu email");
+				exito= false;
+			}
+			
+			var valcp = $('#cp').val();
+			if (!valcp) {
+				valcp=" ";
+			}
+			
+			var valempresa = $('#empresa').val();
+			if (!valempresa) {
+				alert("Favor de escribir tu email");
+				exito= false;
+			}
+			
+			var valpuesto = $('#puesto').val();
+			if (!valpuesto) {
+				valpuesto=" ";
 			}
 		
+			var check_vx = $('input:checkbox[name=checkbox1_0]:checked').val();
+			if (!check_vx) {
+				check_vx="";
+				exito= false;
+			}
+			else
+			{
+				alert(check_vx);
+			}
+			
 			var valrad2 = $('input:radio[name=pregunta2]:checked').val();
 			if (!valrad2) {
 				alert("Please select your option on pregunta2.");
 				exito= false;
 			}
+			
 			var valrad3 = $('input:radio[name=pregunta3]:checked').val();
 			if (!valrad3) {
 				alert("Please select your option on pregunta3.");
