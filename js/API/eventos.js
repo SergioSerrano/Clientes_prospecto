@@ -91,7 +91,7 @@ $(document).ready(function (e) {
 				valpuesto=" ";
 			}
 		
-			var check_vx = $("input[type='checkbox']:checkbox1_0").attr("checked",true).val();
+			var check_vx = $("input:radio[name=checkbox1_0]").attr("checked",true).val();
 			
 			alert(check_vx);
 			if (!check_vx) {
@@ -100,11 +100,7 @@ $(document).ready(function (e) {
 			}
 			
 			
-			var valrad2 = $('input:radio[name=pregunta2]:checked').val();
-			if (!valrad2) {
-				alert("Please select your option on pregunta2.");
-				exito= false;
-			}
+		
 			
 			var valrad3 = $('input:radio[name=pregunta3]:checked').val();
 			if (!valrad3) {
