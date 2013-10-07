@@ -91,12 +91,12 @@ $(document).ready(function (e) {
 				valpuesto=" ";
 			}
 		
-			var check_vx = $('input:checkbox[name=checkbox1_0]:checked').val();
+			var check_vx =  $("#ccheckbox1_0").is(":checked");
 			
 			
 			alert(check_vx);
 			if (!check_vx) {
-				check_vx="";
+				check_vx=false;
 				exito= false;
 			}
 			
