@@ -91,7 +91,8 @@ $(document).ready(function (e) {
 				valpuesto=" ";
 			}
 		
-			var check_vx = $("input:radio[name=checkbox1_0]").attr("checked",true).val();
+			var check_vx = $('input:checkbox[name=checkbox1_0]:checked');
+			
 			
 			alert(check_vx);
 			if (!check_vx) {
