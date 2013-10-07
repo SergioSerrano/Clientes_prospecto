@@ -64,6 +64,12 @@ $(document).ready(function (e) {
 			}
 			
 			
+			var valestado= $('#estado').val();
+			if (!valestado) {
+				alert("Favor de escribir tu ciudad");
+				exito= false;
+			}
+			
 			var valphone = $('#telefono').val();
 			if (!valphone) {
 				alert("Favor de escribir tu numero telefonico");
@@ -90,20 +96,100 @@ $(document).ready(function (e) {
 			if (!valpuesto) {
 				valpuesto=" ";
 			}
+		// inter3es
+			var check_cat =  $("#checkbox1_0").is(":checked");
+			if (check_cat)
+			{
+			var valcat=1;
+			}
 		
-			var check_vx =  $("#checkbox1_0").is(":checked");
+			if (!check_cat) {
+				valcat=0;
+				exito= false;
+			}
+			var check_pro =  $("#checkbox1_1").is(":checked");
+			if (check_pro)
+			{
+			var valpro=1;
+			}
+		
+			if (!check_pro) {
+				valpro=0;
+				exito= false;
+			}
+			var check_inv =  $("#checkbox1_2").is(":checked");
+			if (check_inv)
+			{
+			var valinv=1;
+			}
+		
+			if (!check_inv) {
+				valinv=0;
+				exito= false;
+			}
 			
 			
-			alert(check_vx);
+			//lineas
+			
+			var check_vx =  $("#checkbox1_2").is(":checked");
+			if (check_vx)
+			{
+			var valvx=1;
+			}
+		
 			if (!check_vx) {
-				check_vx=false;
+				valvx=0;
+				exito= false;
+			}
+			
+			var check_mgl =  $("#checkbox1_2").is(":checked");
+			if (check_mgl)
+			{
+			var valmgl=1;
+			}
+		
+			if (!check_mgl) {
+				valmgl=0;
+				exito= false;
+			}
+			
+			var check_cel =  $("#checkbox1_2").is(":checked");
+			if (check_cel)
+			{
+			var valcel=1;
+			}
+		
+			if (!check_cel) {
+				valcel=0;
+				exito= false;
+			}
+			
+			var check_fel =  $("#checkbox1_2").is(":checked");
+			if (check_fel)
+			{
+			var valfel=1;
+			}
+		
+			if (!check_fel) {
+				valfel=0;
+				exito= false;
+			}
+			
+			var check_wen =  $("#checkbox1_2").is(":checked");
+			if (check_wen)
+			{
+			var valwen=1;
+			}
+		
+			if (!check_wen) {
+				valwen=0;
 				exito= false;
 			}
 			
 			
 		
 			
-			var valrad3 = $('input:radio[name=pregunta3]:checked').val();
+			/*var valrad3 = $('input:radio[name=pregunta3]:checked').val();
 			if (!valrad3) {
 				alert("Please select your option on pregunta3.");
 				exito= false;
@@ -117,7 +203,7 @@ $(document).ready(function (e) {
 			if (!valrad5) {
 				alert("Please select your option on pregunta 5.");
 				exito= false;
-			}
+			}*/
 
 
 			if (exito)
