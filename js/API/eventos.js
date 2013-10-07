@@ -91,7 +91,7 @@ $(document).ready(function (e) {
 				valpuesto=" ";
 			}
 		
-			var check_vx =  $("#ccheckbox1_0").is(":checked");
+			var check_vx =  $("#checkbox1_0").is(":checked");
 			
 			
 			alert(check_vx);
