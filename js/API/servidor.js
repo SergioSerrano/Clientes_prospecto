@@ -72,7 +72,7 @@ function guarda_calif(valrad1,valrad2,valrad3,valrad4,valrad5,times){
 }
 
 function guarda_cliente(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11,val12,val13,val14,val15,val16,val17,times){
-alert("Se guardo cliente");
+
 	$.ajax({
 		type: "POST",
 		url: "http://testapp2.260mb.net/sincronizar/prospectos.php",
@@ -88,11 +88,11 @@ alert("Se guardo cliente");
 			return msg;
 			
 		}else{
-			navigator.notification.alert("Error al guardar calificacion", null, "Alert", "Aceptar");	
+			navigator.notification.alert("Error al guardar cliente", null, "Alert", "Aceptar");	
 			return msg;
 		}
 		alert(msg);
-		alert(postMessage);
+	
 	});
 }
 
