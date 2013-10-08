@@ -120,8 +120,17 @@ $(document).ready(function (e) {
 				return false;
 			}
 
+
+			var valvx = 0;
+			var check_vx = $("#checkbox2_0").is(":checked");
+			if (check_vx) {
+				valvx = 1;
+			} else {
+				check_vx = 0;
+				return false;
+			}
 			var valmgl = 0;
-			var check_mgl = $("#checkbox1_2").is(":checked");
+			var check_mgl = $("#checkbox2_1").is(":checked");
 			if (check_mgl) {
 				valmgl = 1;
 			} else {
@@ -130,7 +139,7 @@ $(document).ready(function (e) {
 			}
 
 			var valcel = 0;
-			var check_cel = $("#checkbox1_2").is(":checked");
+			var check_cel = $("#checkbox2_2").is(":checked");
 			if (check_cel) {
 				valcel = 1;
 			}
@@ -140,7 +149,7 @@ $(document).ready(function (e) {
 				return false;
 			}
 			var valfel = 0;
-			var check_fel = $("#checkbox1_2").is(":checked");
+			var check_fel = $("#checkbox2_3").is(":checked");
 			if (check_fel) {
 				valfel = 1;
 			}
@@ -151,7 +160,7 @@ $(document).ready(function (e) {
 			}
 
 			var valwen = 0;
-			var check_wen = $("#checkbox1_2").is(":checked");
+			var check_wen = $("#checkbox2_4").is(":checked");
 			if (check_wen) {
 				valwen = 1;
 			}
@@ -163,7 +172,7 @@ $(document).ready(function (e) {
 
 
 
-alert("llega");
+			alert("llega");
 
 
 			if (isConnected()) {
