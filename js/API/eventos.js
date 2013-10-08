@@ -191,8 +191,8 @@ $(document).ready(function (e) {
 
 
 			if (isConnected()) {
-
-				 guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen, cont);
+				alert("entra if");
+				var amsg= guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen, cont);
 				var cont2 = parseInt(cont) + 1;
 				cont = cont2.toString();
 				setCookie("indice", cont, 365);
