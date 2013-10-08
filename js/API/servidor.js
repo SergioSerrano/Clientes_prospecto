@@ -78,7 +78,7 @@ function guarda_cliente(val1, val2, val3, val4, val5, val6, val7, val8, val9, va
 		url: "http://testapp2.260mb.net/sincronizar/prospectos.php",
 		data: "c1="+val1+"&c2="+val2+"&c3="+val3+"&c4="+val4+"&c5="+val5+"&times="+times
 	}).done(function (msg) {
-		
+		alert(msg);
 		if (msg == 1) {
 
 			//subirFoto(foto,nom);
