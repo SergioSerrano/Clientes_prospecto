@@ -176,11 +176,11 @@ $(document).ready(function (e) {
 
 
 
-			alert("llega");
+		
 
 
 			if (isConnected()) {
-				alert("entra if");
+				
 				var amsg = guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen, cont);
 				var cont2 = parseInt(cont) + 1;
 				cont = cont2.toString();
