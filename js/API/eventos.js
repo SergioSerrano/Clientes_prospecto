@@ -102,7 +102,7 @@ $(document).ready(function (e) {
 			var check_cat =  $("#checkbox1_0").is(":checked");
 			if (check_cat)
 			{
-			var valcat=1;
+			 valcat=1;
 			}
 		
 			if (!check_cat) {
@@ -113,7 +113,7 @@ $(document).ready(function (e) {
 			var check_pro =  $("#checkbox1_1").is(":checked");
 			if (check_pro)
 			{
-			var valpro=1;
+			r valpro=1;
 			}
 		
 			if (!check_pro) {
@@ -124,7 +124,7 @@ $(document).ready(function (e) {
 			var check_inv =  $("#checkbox1_2").is(":checked");
 			if (check_inv)
 			{
-			var valinv=1;
+			 valinv=1;
 			}
 		
 			if (!check_inv) {
@@ -139,7 +139,7 @@ $(document).ready(function (e) {
 			var check_vx =  $("#checkbox1_2").is(":checked");
 			if (check_vx)
 			{
-			var valvx=1;
+			 valvx=1;
 			}
 		
 			if (!check_vx) {
@@ -150,7 +150,7 @@ $(document).ready(function (e) {
 			var check_mgl =  $("#checkbox1_2").is(":checked");
 			if (check_mgl)
 			{
-			var valmgl=1;
+			 valmgl=1;
 			}
 		
 			if (!check_mgl) {
@@ -161,7 +161,7 @@ $(document).ready(function (e) {
 			var check_cel =  $("#checkbox1_2").is(":checked");
 			if (check_cel)
 			{
-			var valcel=1;
+			 valcel=1;
 			}
 		
 			if (!check_cel) {
@@ -172,7 +172,7 @@ $(document).ready(function (e) {
 			var check_fel =  $("#checkbox1_2").is(":checked");
 			if (check_fel)
 			{
-			var valfel=1;
+			 valfel=1;
 			}
 		
 			if (!check_fel) {
@@ -184,7 +184,7 @@ $(document).ready(function (e) {
 			var check_wen =  $("#checkbox1_2").is(":checked");
 			if (check_wen)
 			{
-			var valwen=1;
+			 valwen=1;
 			}
 		
 			if (!check_wen) {
