@@ -54,54 +54,52 @@ $(document).ready(function (e) {
 				alert("Favor de escribir tu direccion");
 				return false;
 			}
-			
+
 			var valciudad = $('#ciudad').val();
 			if (!valciudad) {
 				alert("Favor de escribir tu ciudad");
 				exito = false;
 			}
-			
+
 			var valestado = $('#estado').val();
 			if (!valestado) {
 				alert("Favor de escribir tu ciudad");
 				return false;
 			}
-			
+
 			var valphone = $('#telefono').val();
 			if (!valphone) {
 				alert("Favor de escribir tu numero telefonico");
 				return false;
 			}
-			
+
 			var valemail = $('#email').val();
 			if (!valemail) {
 				alert("Favor de escribir tu email");
 				return false;
 			}
-			
+
 			var valcp = $('#cp').val();
 			if (!valcp) {
 				valcp = 0;
 			}
-			
+
 			var valempresa = $('#empresa').val();
 			if (!valempresa) {
 				alert("Favor de escribir el nombre de empresa");
 				return false;
 			}
-			
+
 			var valpuesto = $('#puesto').val();
 			if (!valpuesto) {
 				valpuesto = 0;
 			}
-			
+
 			var valcat = 0;
 			var check_cat = $("#checkbox1_0").is(":checked");
 			if (check_cat) {
 				valcat = 1;
-			}
-			
-			else {
+			} else {
 				valcat = 0;
 				return false;
 			}
@@ -109,10 +107,7 @@ $(document).ready(function (e) {
 			var check_pro = $("#checkbox1_1").is(":checked");
 			if (check_pro) {
 				valpro = 1;
-			}
-			
-			
-			else {
+			} else {
 				valpro = 0;
 				return false;
 			}
@@ -120,23 +115,20 @@ $(document).ready(function (e) {
 			var check_inv = $("#checkbox1_2").is(":checked");
 			if (check_inv) {
 				valinv = 1;
-			}
-			else {
+			} else {
 				valvx = 0;
 				return false;
 			}
-				
+
 			var valmgl = 0;
 			var check_mgl = $("#checkbox1_2").is(":checked");
-			if (check_mgl){
-				valmgl=1;
-			}
-			
-			else{
+			if (check_mgl) {
+				valmgl = 1;
+			} else {
 				valmgl = 0;
 				return false;
 			}
-			
+
 			var valcel = 0;
 			var check_cel = $("#checkbox1_2").is(":checked");
 			if (check_cel) {
@@ -171,12 +163,12 @@ $(document).ready(function (e) {
 
 
 
-
+alert("llega");
 
 
 			if (isConnected()) {
 				alert("entra if");
-				var amsg= guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen, cont);
+				var amsg = guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen, cont);
 				var cont2 = parseInt(cont) + 1;
 				cont = cont2.toString();
 				setCookie("indice", cont, 365);
@@ -187,15 +179,15 @@ $(document).ready(function (e) {
 				guardatempcalif(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen);
 			}
 
-			
+
 		});
-			
-			
 
 
 
 
 
-		
+
+
+
 	});
 });
