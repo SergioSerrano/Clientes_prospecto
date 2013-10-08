@@ -216,7 +216,7 @@ $(document).ready(function (e) {
 			{
 			if (isConnected()) {
 
-				var msg = guarda_cliente(valnombre, valdireccion, valciudad, valestado,valcp, valphone,valemail,valempresa,valpuesto,valcat,valpro,valinv,valvx,valmgl,valcel,valfel,valwen, cont);
+				var msg = guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone,valemail,valempresa,valpuesto,valcp,valcat,valpro,valinv,valvx,valmgl,valcel,valfel,valwen, cont);
 				var cont2 = parseInt(cont) + 1;
 				cont = cont2.toString();
 				setCookie("indice", cont, 365);
@@ -224,7 +224,7 @@ $(document).ready(function (e) {
 
 				leeresarvas2();
 			} else {
-				guardatempcalif(valrad1, valrad2, valrad3, valrad4, valrad5);
+				guardatempcalif(valnombre, valdireccion, valciudad, valestado, valphone,valemail,valempresa,valpuesto,valcp,valcat,valpro,valinv,valvx,valmgl,valcel,valfel,valwen);
 			}
 			}
 			return false;

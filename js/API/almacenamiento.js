@@ -22,10 +22,10 @@ function guardarReserva(th, ha, di, pe){
 	});
 }
 
-function guardatempcalif(p1, p2, p3, p4,p5){
+function guardatempcalif(p1, p2, p3, p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17){
 	accesoBD().transaction(function(tx){
-		tx.executeSql('CREATE TABLE IF NOT EXISTS calif (id unique,p1, p2, p3, p4,p5)');
-		tx.executeSql('INSERT INTO calif (p1, p2, p3, p4,p5) VALUES ("'+p1+'","'+p2+'","'+p3+'","'+p4+'","'+p5+'")');
+		tx.executeSql('CREATE TABLE IF NOT EXISTS clientes (id unique,p1, p2, p3, p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17)');
+		tx.executeSql('INSERT INTO calif (p1, p2, p3, p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17) VALUES ("'+p1+'","'+p2+'","'+p3+'","'+p4+'","'+p5+'","'+p6+'","'+p7+'","'+p8+'","'+p9+'","'+p10+'","'+p11+'","'+p12+'","'+p13+'","'+p14+'","'+p15+'","'+p16+'","'+p17+'")');
 			
 	}, function(err){
 		alert("Error processing SQL: "+err);
@@ -48,13 +48,13 @@ function guardarHistorial(th, ha, di, pe){
 
 function leeresarvas2(){
 	accesoBD().transaction(function(tx){
-		tx.executeSql('SELECT * FROM calif',[],function(tx2, resultado){
+		tx.executeSql('SELECT * FROM clientes',[],function(tx2, resultado){
 			var largo = resultado.rows.length;
 			if(largo>0){
 	
 				for(i=0;i<largo;i++){
 
-						sube_interno(resultado.rows.item(i).p1,resultado.rows.item(i).p2,resultado.rows.item(i).p3,resultado.rows.item(i).p4,resultado.rows.item(i).p5);
+						sube_interno(resultado.rows.item(i).p1,resultado.rows.item(i).p2,resultado.rows.item(i).p3,resultado.rows.item(i).p4,resultado.rows.item(i).p5,resultado.rows.item(i).p6,resultado.rows.item(i).p7,resultado.rows.item(i).p8,resultado.rows.item(i).p9,resultado.rows.item(i).p10,resultado.rows.item(i).p11,resultado.rows.item(i).p12,resultado.rows.item(i).p13,resultado.rows.item(i).p14,resultado.rows.item(i).p15,resultado.rows.item(i).p16,resultado.rows.item(i).p17);
 						//window.location.reload();
 				}
 				borrarReserva();
@@ -113,7 +113,7 @@ var cont=getCookie("indice");*/
 }
 function borrarReserva(){
 	accesoBD().transaction(function(tx){
-		tx.executeSql('DELETE FROM calif' );
+		tx.executeSql('DELETE FROM clientes' );
 	},function(err){
 		alert(err.code);
 	}, function(){

@@ -75,7 +75,7 @@ function guarda_cliente(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11
 
 	$.ajax({
 		type: "POST",
-		url: "http://testapp2.260mb.net/sincronizar/g_preguntas.php",
+		url: "http://testapp2.260mb.net/sincronizar/prospectos.php",
 		data: "c1="+val+"&c2="+val2+"&c3="+val3+"&c4="+val4+"&c5="+val5+"&c6="+val6+"&c7="+val7+"&c8="+val8+"&c9="+val9+"&c10="+val10+"&c11="+val11+"&c12="+val12+"&c13="+val13+"&c14="+val14+"&c15="+val15+"&c16="+val16+"&c17="+val17+"&times="+times
 	}).done(function(msg) {
 		
@@ -94,20 +94,20 @@ function guarda_cliente(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11
 	});
 }
 
-function sube_interno(valrad1,valrad2,valrad3,valrad4,valrad5){
+function sube_interno(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11,val12,val13,val14,val15,val16,val17){
 	 
 
 		
 	$.ajax({
 		type: "POST",
-		url: "http://testapp2.260mb.net/sincronizar/g_preguntas.php",
-		data: "c1="+valrad1+"&c2="+valrad2+"&c3="+valrad3+"&c4="+valrad4+"&c5="+valrad5
+		url: "http://testapp2.260mb.net/sincronizar/prospectos.php",
+		data: "c1="+val+"&c2="+val2+"&c3="+val3+"&c4="+val4+"&c5="+val5+"&c6="+val6+"&c7="+val7+"&c8="+val8+"&c9="+val9+"&c10="+val10+"&c11="+val11+"&c12="+val12+"&c13="+val13+"&c14="+val14+"&c15="+val15+"&c16="+val16+"&c17="+val17
 	}).done(function(msg) {
 		
 		if(msg==1){
 			
 			
-			window.location.href="#pregunta116";
+			window.location.href="#form1";
 			//navigator.notification.alert("Reserva Sincronizada Satisfactoriamente",null,"Reserva Realizada", "Aceptar");
 			
 			//subirFoto(foto,nom);
