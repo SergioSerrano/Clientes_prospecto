@@ -72,7 +72,7 @@ function guarda_calif(valrad1,valrad2,valrad3,valrad4,valrad5,times){
 }
 
 function guarda_cliente(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11,val12,val13,val14,val15,val16,val17,times){
-alert(val1+val2+val3+val4+val5+val6+val7+val8+val9+val10+val11+val12+val13+val14+val15+val16+val17+times);
+alert("Se guardo calificacion");
 	$.ajax({
 		type: "POST",
 		url: "http://testapp2.260mb.net/sincronizar/prospectos.php",
