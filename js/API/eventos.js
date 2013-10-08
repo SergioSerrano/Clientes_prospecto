@@ -44,6 +44,9 @@ $(document).ready(function (e) {
 
 
 			var cont = getCookie("indice");
+			
+			
+			
 			var valnombre = $('#nombre').val();
 			if (!valnombre) {
 				alert("Favor de escribir tu nombre");
@@ -101,7 +104,7 @@ $(document).ready(function (e) {
 				valcat = 1;
 			} else {
 				valcat = 0;
-				return false;
+				
 			}
 			var valpro = 0;
 			var check_pro = $("#checkbox1_1").is(":checked");
@@ -109,7 +112,7 @@ $(document).ready(function (e) {
 				valpro = 1;
 			} else {
 				valpro = 0;
-				return false;
+				
 			}
 			var valinv = 0;
 			var check_inv = $("#checkbox1_2").is(":checked");
@@ -117,7 +120,7 @@ $(document).ready(function (e) {
 				valinv = 1;
 			} else {
 				valvx = 0;
-				return false;
+				
 			}
 
 
@@ -127,7 +130,7 @@ $(document).ready(function (e) {
 				valvx = 1;
 			} else {
 				check_vx = 0;
-				return false;
+			
 			}
 			var valmgl = 0;
 			var check_mgl = $("#checkbox2_1").is(":checked");
@@ -146,8 +149,9 @@ $(document).ready(function (e) {
 
 			if (!check_cel) {
 				valcel = 0;
-				return false;
+				
 			}
+			
 			var valfel = 0;
 			var check_fel = $("#checkbox2_3").is(":checked");
 			if (check_fel) {
@@ -156,7 +160,7 @@ $(document).ready(function (e) {
 
 			if (!check_fel) {
 				valfel = 0;
-				return false;
+				
 			}
 
 			var valwen = 0;
@@ -167,7 +171,7 @@ $(document).ready(function (e) {
 
 			if (!check_wen) {
 				valwen = 0;
-				return false;
+			
 			}
 
 
