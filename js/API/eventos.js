@@ -54,14 +54,12 @@ $(document).ready(function (e) {
 			}
 			var valdireccion = $('#direccion').val();
 			if (!valdireccion) {
-				alert("Favor de escribir tu direccion");
-				return false;
+				valdireccion = 0;
 			}
 
 			var valciudad = $('#ciudad').val();
 			if (!valciudad) {
-				alert("Favor de escribir tu ciudad");
-				exito = false;
+				valciudad=0;
 			}
 
 			var valestado = $('#estado').val();
@@ -119,7 +117,7 @@ $(document).ready(function (e) {
 			if (check_inv) {
 				valinv = 1;
 			} else {
-				valvx = 0;
+				valinv = 0;
 				
 			}
 
@@ -129,7 +127,7 @@ $(document).ready(function (e) {
 			if (check_vx) {
 				valvx = 1;
 			} else {
-				check_vx = 0;
+				valvx = 0;
 			
 			}
 			var valmgl = 0;
@@ -138,7 +136,7 @@ $(document).ready(function (e) {
 				valmgl = 1;
 			} else {
 				valmgl = 0;
-				return false;
+				
 			}
 
 			var valcel = 0;

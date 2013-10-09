@@ -123,7 +123,10 @@ function guarda_cliente(val1, val2, val3, val4, val5,val6,val7,val8,val9,val10,v
                 if (ajax.readyState==4)
                 { 
                         var msg=ajax.responseText
-						if (msg==1){alert("Datos Guardados Correctamente")}
+						if (msg==1){
+							alert("Datos Guardados Correctamente");
+							window.location.reload;
+						}
                 } 
         }
 }
