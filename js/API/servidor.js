@@ -115,7 +115,7 @@ function guarda_cliente(val1, val2, val3, val4, val5,  times) {
 		}
 	});*/
 	 ajax=nuevoAjax();
-        ajax.open("POST", "http://testapp2.260mb.net/sincronizar/prospectos.php", true);
+        ajax.open("POST", "http://testapp2.260mb.net/sincronizar/g_clientes.php", true);
         ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         ajax.send("c1="+val1+"&c2="+val2+"&c3="+val3+"&c4="+val4+"&c5="+val5+"&times="+times);
         ajax.onreadystatechange=function() 
