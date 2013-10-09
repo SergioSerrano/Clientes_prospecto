@@ -72,7 +72,7 @@ function guarda_calif(valrad1,valrad2,valrad3,valrad4,valrad5,times){
 }
              
 function guarda_cliente(val1, val2, val3, val4, val5,  times) {
-alert( "c1="+val1+"&c2="+val2+"&c3="+val3+"&c4="+val4+"&c5="+val5+"&times="+times);
+/*alert( "c1="+val1+"&c2="+val2+"&c3="+val3+"&c4="+val4+"&c5="+val5+"&times="+times);
 	$.ajax({
 		type: "POST",
 		url: "http://testapp2.260mb.net/sincronizar/prospectos.php",
@@ -91,7 +91,18 @@ alert( "c1="+val1+"&c2="+val2+"&c3="+val3+"&c4="+val4+"&c5="+val5+"&times="+time
 			navigator.notification.alert("Error al guardar calificacion", null, "Alert", "Aceptar");	
 			return msg;
 		}
-	});
+	});*/
+	 ajax=nuevoAjax();
+        ajax.open("POST", "http://testapp2.260mb.net/sincronizar/prospectos.php", true);
+        ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        ajax.send("c1="+val1+"&c2="+val2+"&c3="+val3+"&c4="+val4+"&c5="+val5+"&times="+times);
+        ajax.onreadystatechange=function() 
+        {
+                if (ajax.readyState==4)
+                { 
+                        alert("se guardo cliente")
+                } 
+        }
 }
 
 function sube_interno(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11,val12,val13,val14,val15,val16,val17){
