@@ -1,4 +1,7 @@
 //Servidor
+
+
+
 function nuevoAjax()
 {
         var xmlhttp=false;
