@@ -160,8 +160,8 @@ function sube_interno(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11,v
         {
                 if (ajax.readyState==4)
                 { 
-                        var msg=ajax.responseText
-						if (msg==1){window.location.href="#form1";)}
+                        var msg=ajax.responseText;
+						if (msg==1){window.location.href="#form1";}
                 } 
         }
 }
