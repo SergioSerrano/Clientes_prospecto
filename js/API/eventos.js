@@ -73,16 +73,28 @@ $(document).ready(function (e) {
 				alert("Favor de escribir tu numero telefonico");
 				return false;
 			}
+			if( !(/^\(\d{3}\)\s\d{7}$/.test(valphone)) ) {
+				alert("El formato para numero telefonico debe ser:(123) 4567890");
+  				return false;
+			}
 
 			var valemail = $('#email').val();
 			if (!valemail) {
 				alert("Favor de escribir tu email");
 				return false;
 			}
+			if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(valemail)) ) {
+				alert("Escriba una direccion de correo valida");
+				return false;
+			}
 
 			var valcp = $('#cp').val();
 			if (!valcp) {
 				valcp = 0;
+			}
+			if( isNaN(valcp) ) {
+				alert("el codigo postal deben ser solo numeros")
+  				return false;
 			}
 
 			var valempresa = $('#empresa').val();
