@@ -83,7 +83,7 @@ $(document).ready(function (e) {
 				alert("Favor de escribir tu email");
 				return false;
 			}
-			if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(valemail)) ) {
+			if( !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(valemail)) ) {
 				alert("Escriba una direccion de correo valida");
 				return false;
 			}
