@@ -122,7 +122,7 @@ function guarda_cliente(val1, val2, val3, val4, val5,  times) {
         {
                 if (ajax.readyState==4)
                 { 
-                        alert("se guardo cliente")
+                        alert(ajax.responseText);
                 } 
         }
 }
