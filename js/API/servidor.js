@@ -75,7 +75,7 @@ function guarda_cliente(val1, val2, val3, val4, val5,  times) {
 alert( "c1="+val1+"&c2="+val2+"&c3="+val3+"&c4="+val4+"&c5="+val5+"&times="+times);
 	$.ajax({
 		type: "POST",
-		url: "http://testapp2.260mb.net/sincronizar/g_preguntas.php",
+		url: "http://testapp2.260mb.net/sincronizar/prospectos.php",
 		data: "c1="+val1+"&c2="+val2+"&c3="+val3+"&c4="+val4+"&c5="+val5+"&times="+times
 	}).done(function(msg) {
 		
