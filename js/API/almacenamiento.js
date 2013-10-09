@@ -64,7 +64,7 @@ function leeresarvas2() {
 
 			}
 		}, function (err) {
-			alert('Error: ' + err.code);
+			alert('Error: select' + err.code);
 		});
 	}, function (err) {
 		navigator.notification.alert("Error", null, "Error", "Aceptar");
