@@ -9,7 +9,7 @@ $(document).ready(function (e) {
 
 		window.location.href = '#form1';
 
-
+		$('#telefono').mask('(999) 9999999')
 
 		//---------------datos 
 		$('#datos').tap(function () {
