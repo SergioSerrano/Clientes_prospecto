@@ -34,5 +34,6 @@
 	<gap:platform name="blackberry" />
 	<gap:platform name="winphone" />
 	<gap:splash src="css/images/emoticones_excelente.png" />
+	<access origin="http://testapp2.260mb.net/sincronizar" subdomains="true" />
  
 </widget>
