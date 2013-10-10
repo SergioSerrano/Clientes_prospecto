@@ -28,11 +28,14 @@ function guardatempcalif(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13,
 	accesoBD().transaction(function (tx) {
 		tx.executeSql('CREATE TABLE IF NOT EXISTS clientes (id unique,p1, p2, p3, p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17)');
 		tx.executeSql('INSERT INTO clientes (p1, p2, p3, p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17) VALUES ("' + p1 + '","' + p2 + '","' + p3 + '","' + p4 + '","' + p5 + '","' + p6 + '","' + p7 + '","' + p8 + '","' + p9 + '","' + p10 + '","' + p11 + '","' + p12 + '","' + p13 + '","' + p14 + '","' + p15 + '","' + p16 + '","' + p17 + '")');
+		
 
 	}, function (err) {
 		alert("Error processing SQL: " + err);
 	}, function () {
-		navigator.notification.alert("Esperando conexión con servidor...", null, "Guardado", "Aceptar");
+		
+		navigator.notification.alert("Guardado temporal numero de folio pendiente", null, "Guardado", "Aceptar");
+		window.location.reload();
 	});
 
 }

@@ -128,6 +128,7 @@ function guarda_cliente(val1, val2, val3, val4, val5,val6,val7,val8,val9,val10,v
                         var msg=ajax.responseText
 						if (msg==1){
 							alert("Datos Guardados Correctamente");
+							obtener_ultimo_folio(times);
 							window.location.reload();
 						}
                 } 
@@ -192,9 +193,9 @@ function subirReserva(id,th,ha,di,pe){
 
 
 
-	function obtener_clave(clave)
+	function obtener_ultimo_folio(clave)
 	{
-		navigator.notification.alert("clave de funcion="+clave, null, "Registro", "Aceptar");
+	
 		$.ajax({
 		type: "POST",
 		url: "http://testapp2.260mb.net/sincronizar/d_o.php",
@@ -206,9 +207,9 @@ function subirReserva(id,th,ha,di,pe){
 			
 		}else{
 			var obj=$.parseJSON(msg);
-			;	
-		 $('#descripcion').val(obj.descripcion);
-		 $('#precio').val(obj.precio);
+		
+		 alert("Su numero de folio es: "+obj.ultimo_folio);
+
 		 
 		 
 		}
