@@ -195,7 +195,7 @@
             <ul>
                 <li>
 					<br>
-                    <a href="#pregunta111" data-transition="none" data-theme="c" id="cancela">
+                    <a href="#" data-transition="none" data-theme="c" id="cancela">
                         Cancelar
                     </a>
                 </li>
@@ -516,9 +516,9 @@
 		<script type="text/javascript" src="http://digitalbush.com/wp-content/uploads/2013/01/jquery.maskedinput-1.3.1.min_.js"></script>
 		<script type="text/javascript">// <![CDATA[
 jQuery(function($) {
-      $.mask.definitions['~']='[+-]';
+      $.mask.definitions['h'] = "[? 0-9]";
      
-      $('#telefono').mask('(999) 9999999');
+      $('#telefono').mask('(h99) 9999999');
    
    });
 // ]]&gt;</script>

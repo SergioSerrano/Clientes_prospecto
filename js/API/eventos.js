@@ -23,7 +23,7 @@ $(document).ready(function (e) {
 		});
 
 
-		$('#finaliza').tap(function () {
+		$('#cancela').tap(function () {
 			window.location.reload();
 
 
@@ -73,8 +73,8 @@ $(document).ready(function (e) {
 				alert("Favor de escribir tu numero telefonico");
 				return false;
 			}
-			if( !(/^\(\d{3}\)\s\d{7}$/.test(valphone)) ) {
-				alert("El formato para numero telefonico debe ser:(123) 4567890");
+			if( !(/^\(\d{2,3}\)\s\d{7}$/.test(valphone)) ) {
+				alert("El formato para numero telefonico debe ser:(lada 2 o 3 digitos) 7 digitos del numero");
   				return false;
 			}
 
