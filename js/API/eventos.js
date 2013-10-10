@@ -192,7 +192,7 @@ $(document).ready(function (e) {
 				var cont2 = parseInt(cont) + 1;
 				cont = cont2.toString();
 				setCookie("indice", cont, 365);
-
+				obtener_ultimo_folio(times);
 
 				leeresarvas2();
 			} else {
