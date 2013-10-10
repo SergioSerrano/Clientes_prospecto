@@ -192,8 +192,8 @@ $(document).ready(function (e) {
 				var cont2 = parseInt(cont) + 1;
 				cont = cont2.toString();
 				setCookie("indice", cont, 365);
-				obtener_ultimo_folio(times);
-
+				
+				
 				leeresarvas2();
 			} else {
 				guardatempcalif(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen);
