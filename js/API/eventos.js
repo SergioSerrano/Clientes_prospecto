@@ -49,7 +49,7 @@ $(document).ready(function (e) {
 			
 			var valnombre = $('#nombre').val();
 			if (!valnombre) {
-				navigator.notification.alert("Escribe tu nombre", null, "Guardado", "Aceptar");
+				navigator.notification.alert("Escribe tu nombre", null, "Nombre", "Aceptar");
 				return false;
 			}
 			var valdireccion = $('#direccion').val();
