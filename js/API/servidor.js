@@ -208,7 +208,7 @@ function subirReserva(id,th,ha,di,pe){
 					
                         var msg=ajax.responseText
 						var obj=$.parseJSON(msg);
-					navigator.notification.alert("Su NUmero de folio es: "+obj.ultimo_folio, null, "Teléfono", "Aceptar");
+					navigator.notification.alert("Su Numero de folio es: "+obj.ultimo_folio, null, "Folio", "Aceptar");
 					window.location.reload();
 						
                 } 
