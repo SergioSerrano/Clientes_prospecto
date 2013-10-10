@@ -202,8 +202,9 @@ function subirReserva(id,th,ha,di,pe){
 		data: "clave="+clave
 	}).done(function(msg) {
 		if(msg[0]==0){
+			var obj2=$.parseJSON(msg);
 			//subirFoto(foto,nom);
-			
+			 alert("Su numero de folio es: "+obj2);
 			
 		}else{
 			var obj=$.parseJSON(msg);
