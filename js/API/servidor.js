@@ -129,7 +129,7 @@ function guarda_cliente(val1, val2, val3, val4, val5,val6,val7,val8,val9,val10,v
 						if (msg==1){
 							alert("Datos Guardados Correctamente");
 							obtener_ultimo_folio(times);
-							window.location.reload();
+							
 						}
                 } 
         }
@@ -205,13 +205,14 @@ function subirReserva(id,th,ha,di,pe){
         {
                 if (ajax.readyState==4)
                 { 
-					alert(msg);
+					alert(msg+"DENTTRO DE READY STATE");
                         var msg=ajax.responseText
 						var obj=$.parseJSON(msg);
 					alert("Su numero de folio es: "+obj.ultimo_folio);
+					window.location.reload();
 						
                 } 
-			alert(msg);
+			alert(msg+"FUERA DE READY STATE");
         }
 	}
 
