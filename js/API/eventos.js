@@ -49,7 +49,7 @@ $(document).ready(function (e) {
 			
 			var valnombre = $('#nombre').val();
 			if (!valnombre) {
-				alert("Favor de escribir tu nombre");
+				navigator.notification.alert("Escribe tu nombre", null, "Guardado", "Aceptar");
 				return false;
 			}
 			var valdireccion = $('#direccion').val();
@@ -64,24 +64,24 @@ $(document).ready(function (e) {
 
 			var valestado = $('#estado').val();
 			if (!valestado) {
-				alert("Favor de escribir tu ciudad");
+				navigator.notification.alert("Escribe tu ciudad", null, "Ciudad", "Aceptar");
 				return false;
 			}
 
 			var valphone = $('#telefono').val();
 			if (!valphone) {
-				alert("Favor de escribir tu numero telefonico");
+				navigator.notification.alert("Escribe tu numero telefonico", null, "Teléfono", "Aceptar");
 				return false;
 			}
 			
 
 			var valemail = $('#email').val();
 			if (!valemail) {
-				alert("Favor de escribir tu email");
+				navigator.notification.alert("Escribe una direccion de correo", null, "Teléfono", "Aceptar");
 				return false;
 			}
 			if( !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(valemail)) ) {
-				alert("Escriba una direccion de correo valida");
+				navigator.notification.alert("Favor de escribir una direccion de correo valida", null, "Correo electronico", "Aceptar");
 				return false;
 			}
 
@@ -90,13 +90,13 @@ $(document).ready(function (e) {
 				valcp = 0;
 			}
 			if( isNaN(valcp) ) {
-				alert("el codigo postal deben ser solo numeros")
+				navigator.notification.alert("El codigo postal solo esta compuesto de números", null, "Codigo Postal", "Aceptar");
   				return false;
 			}
 
 			var valempresa = $('#empresa').val();
 			if (!valempresa) {
-				alert("Favor de escribir el nombre de empresa");
+				navigator.notification.alert("Escribe el nombre de tu empresa", null, "Empresa", "Aceptar");
 				return false;
 			}
 

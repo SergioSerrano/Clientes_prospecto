@@ -127,7 +127,7 @@ function guarda_cliente(val1, val2, val3, val4, val5,val6,val7,val8,val9,val10,v
                 { 
                         var msg=ajax.responseText
 						if (msg==1){
-							alert("Datos Guardados Correctamente");
+							navigator.notification.alert("Datos guardados correctamente", null, "Guardado", "Aceptar");
 							obtener_ultimo_folio(times);
 							
 						}
@@ -208,7 +208,7 @@ function subirReserva(id,th,ha,di,pe){
 					
                         var msg=ajax.responseText
 						var obj=$.parseJSON(msg);
-					alert("Su numero de folio es: "+obj.ultimo_folio);
+					navigator.notification.alert("Su NUmero de folio es: "+obj.ultimo_folio, null, "Teléfono", "Aceptar");
 					window.location.reload();
 						
                 } 
