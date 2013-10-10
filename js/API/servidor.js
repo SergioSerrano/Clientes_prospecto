@@ -195,7 +195,7 @@ function subirReserva(id,th,ha,di,pe){
 
 	function obtener_ultimo_folio(clave)
 	{
-	
+	alert("entre a ultimo folio");
 		
 		ajax=nuevoAjax();
         ajax.open("POST", "http://testapp2.260mb.net/sincronizar/d_o.php", true);
@@ -205,11 +205,13 @@ function subirReserva(id,th,ha,di,pe){
         {
                 if (ajax.readyState==4)
                 { 
+					alert(msg);
                         var msg=ajax.responseText
 						var obj=$.parseJSON(msg);
 					alert("Su numero de folio es: "+obj.ultimo_folio);
 						
                 } 
+			alert(msg);
         }
 	}
 
