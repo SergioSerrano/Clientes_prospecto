@@ -9,7 +9,7 @@ $(document).ready(function (e) {
 
 		window.location.href = '#form1';
 
-		
+
 
 		//---------------datos 
 		$('#datos').tap(function () {
@@ -44,9 +44,9 @@ $(document).ready(function (e) {
 
 
 			var cont = getCookie("indice");
-			
-			
-			
+
+
+
 			var valnombre = $('#nombre').val();
 			if (!valnombre) {
 				navigator.notification.alert("Escribe tu nombre", null, "Nombre", "Aceptar");
@@ -59,7 +59,7 @@ $(document).ready(function (e) {
 
 			var valciudad = $('#ciudad').val();
 			if (!valciudad) {
-				valciudad=0;
+				valciudad = 0;
 			}
 
 			var valestado = $('#estado').val();
@@ -73,14 +73,14 @@ $(document).ready(function (e) {
 				navigator.notification.alert("Escribe tu numero telefonico", null, "Teléfono", "Aceptar");
 				return false;
 			}
-			
+
 
 			var valemail = $('#email').val();
 			if (!valemail) {
 				navigator.notification.alert("Escribe una direccion de correo", null, "Teléfono", "Aceptar");
 				return false;
 			}
-			if( !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(valemail)) ) {
+			if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(valemail))) {
 				navigator.notification.alert("Favor de escribir una direccion de correo valida", null, "Correo electronico", "Aceptar");
 				return false;
 			}
@@ -89,9 +89,9 @@ $(document).ready(function (e) {
 			if (!valcp) {
 				valcp = 0;
 			}
-			if( isNaN(valcp) ) {
+			if (isNaN(valcp)) {
 				navigator.notification.alert("El codigo postal solo esta compuesto de números", null, "Codigo Postal", "Aceptar");
-  				return false;
+				return false;
 			}
 
 			var valempresa = $('#empresa').val();
@@ -111,7 +111,7 @@ $(document).ready(function (e) {
 				valcat = 1;
 			} else {
 				valcat = 0;
-				
+
 			}
 			var valpro = 0;
 			var check_pro = $("#checkbox1_1").is(":checked");
@@ -119,7 +119,7 @@ $(document).ready(function (e) {
 				valpro = 1;
 			} else {
 				valpro = 0;
-				
+
 			}
 			var valinv = 0;
 			var check_inv = $("#checkbox1_2").is(":checked");
@@ -127,7 +127,7 @@ $(document).ready(function (e) {
 				valinv = 1;
 			} else {
 				valinv = 0;
-				
+
 			}
 
 
@@ -137,7 +137,7 @@ $(document).ready(function (e) {
 				valvx = 1;
 			} else {
 				valvx = 0;
-			
+
 			}
 			var valmgl = 0;
 			var check_mgl = $("#checkbox2_1").is(":checked");
@@ -145,7 +145,7 @@ $(document).ready(function (e) {
 				valmgl = 1;
 			} else {
 				valmgl = 0;
-				
+
 			}
 
 			var valcel = 0;
@@ -156,9 +156,9 @@ $(document).ready(function (e) {
 
 			if (!check_cel) {
 				valcel = 0;
-				
+
 			}
-			
+
 			var valfel = 0;
 			var check_fel = $("#checkbox2_3").is(":checked");
 			if (check_fel) {
@@ -167,7 +167,7 @@ $(document).ready(function (e) {
 
 			if (!check_fel) {
 				valfel = 0;
-				
+
 			}
 
 			var valwen = 0;
@@ -178,22 +178,39 @@ $(document).ready(function (e) {
 
 			if (!check_wen) {
 				valwen = 0;
-			
+
 			}
 
 
 
-		
+
 
 
 			if (isConnected()) {
-				
-			 guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone,valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen, cont);
+
+				guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen, cont);
 				var cont2 = parseInt(cont) + 1;
 				cont = cont2.toString();
 				setCookie("indice", cont, 365);
-				
-				
+				var currentScope = 0; // global scope
+				(function () {
+					var currentScope = 1,
+						one = 'scope1';
+					alert(currentScope);
+					(function () {
+						var currentScope = 2,
+							two = 'scope2';
+						alert(currentScope);
+						(function () {
+							var currentScope = 3,
+								three = 'scope3';
+							alert(currentScope);
+							alert(one + two + three); // climb up the scope chain to get one and two
+						}());
+					}());
+				}());
+
+
 				leeresarvas2();
 			} else {
 				guardatempcalif(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen);
