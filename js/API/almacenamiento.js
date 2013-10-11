@@ -34,7 +34,7 @@ function guardatempcalif(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13,
 		alert("Error processing SQL: " + err);
 	}, function () {
 
-		navigator.notification.alert("Guardado temporal numero de folio pendiente",limpiar, "Guardado", "Aceptar");
+		navigator.notification.alert("Guardado temporal numero de folio pendiente", limpiar, "Guardado", "Aceptar");
 
 	});
 	return false;
@@ -159,60 +159,59 @@ function leerHistorial() {
 }
 
 function limpiar() {
-	$('#nombre').val() = "";
+	$('#nombre').val("");
 
-	$('#direccion').val()= "";
+	$('#direccion').val("");
 
-	$('#ciudad').val()= "";
-
-
-	$('#estado').val()= "";
-
-	$('#telefono').val()= "";
+	$('#ciudad').val("");
 
 
+	$('#estado').val("");
 
-	$('#email').val()= "";
+	$('#telefono').val("");
 
 
 
-	$('#cp').val()= "";
-
-
-	$('#empresa').val()= "";
-
-
-	$('#puesto').val()= "";
+	$('#email').val("");
 
 
 
-	$("#checkbox1_0").is(":checked")=false;
+	$('#cp').val("");
 
 
-	$("#checkbox1_1").is(":checked")=false;
+	$('#empresa').val("");
 
 
-	$("#checkbox1_2").is(":checked")=false;
+	$('#puesto').val("");
 
 
 
 
-
-	$("#checkbox2_0").is(":checked")=false;
-
-
-	$("#checkbox2_1").is(":checked")=false;
+	$("#checkbox1_0").attr('checked', false);
 
 
 
-	$("#checkbox2_2").is(":checked")=false;
+	$("#checkbox1_1").attr('checked', false);
+
+
+	$("#checkbox1_2").attr('checked', false);
 
 
 
-	$("#checkbox2_3").is(":checked")=false;
 
 
-	$("#checkbox2_4").is(":checked")=false;
+	$("#checkbox2_0").attr('checked', false);
+	$("#checkbox2_1").attr('checked', false);
+	$("#checkbox2_2").attr('checked', false);
+	$("#checkbox2_3").attr('checked', false);
+	$("#checkbox2_4").attr('checked', false);
+
+
+
+
+
+
+
 	return false;
 
 }
