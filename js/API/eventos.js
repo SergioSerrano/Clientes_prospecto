@@ -207,7 +207,7 @@ $(document).ready(function (e) {
 			} else {
 				guardatempcalif(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen);
 			}
-
+return false;
 
 		});
 
