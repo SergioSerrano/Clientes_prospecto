@@ -28,16 +28,16 @@ function guardatempcalif(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13,
 	accesoBD().transaction(function (tx) {
 		tx.executeSql('CREATE TABLE IF NOT EXISTS clientes (id unique,p1, p2, p3, p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17)');
 		tx.executeSql('INSERT INTO clientes (p1, p2, p3, p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17) VALUES ("' + p1 + '","' + p2 + '","' + p3 + '","' + p4 + '","' + p5 + '","' + p6 + '","' + p7 + '","' + p8 + '","' + p9 + '","' + p10 + '","' + p11 + '","' + p12 + '","' + p13 + '","' + p14 + '","' + p15 + '","' + p16 + '","' + p17 + '")');
-		
+
 
 	}, function (err) {
 		alert("Error processing SQL: " + err);
 	}, function () {
-		
-		navigator.notification.alert("Guardado temporal numero de folio pendiente", window.location.reload(), "Guardado", "Aceptar");
-	
+
+		navigator.notification.alert("Guardado temporal numero de folio pendiente",limpiar, "Guardado", "Aceptar");
+
 	});
-return false;
+	return false;
 }
 
 function guardarHistorial(th, ha, di, pe) {
@@ -158,4 +158,61 @@ function leerHistorial() {
 	});
 }
 
+function limpiar() {
+	$('#nombre').val() = "";
 
+	$('#direccion').val()= "";
+
+	$('#ciudad').val()= "";
+
+
+	$('#estado').val()= "";
+
+	$('#telefono').val()= "";
+
+
+
+	$('#email').val()= "";
+
+
+
+	$('#cp').val()= "";
+
+
+	$('#empresa').val()= "";
+
+
+	$('#puesto').val()= "";
+
+
+
+	$("#checkbox1_0").is(":checked")=false;
+
+
+	$("#checkbox1_1").is(":checked")=false;
+
+
+	$("#checkbox1_2").is(":checked")=false;
+
+
+
+
+
+	$("#checkbox2_0").is(":checked")=false;
+
+
+	$("#checkbox2_1").is(":checked")=false;
+
+
+
+	$("#checkbox2_2").is(":checked")=false;
+
+
+
+	$("#checkbox2_3").is(":checked")=false;
+
+
+	$("#checkbox2_4").is(":checked")=false;
+	return false;
+
+}
