@@ -133,6 +133,7 @@ function guarda_cliente(val1, val2, val3, val4, val5,val6,val7,val8,val9,val10,v
 						}
                 } 
         }
+		return false;
 }
 
 function sube_interno(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11,val12,val13,val14,val15,val16,val17){
@@ -171,6 +172,7 @@ function sube_interno(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11,v
 						if (msg==1){window.location.href="#form1";}
                 } 
         }
+		return false;
 }
 
 function subirReserva(id,th,ha,di,pe){
@@ -208,11 +210,12 @@ function subirReserva(id,th,ha,di,pe){
 					
                         var msg=ajax.responseText
 						var obj=$.parseJSON(msg);
-					navigator.notification.alert("Su Numero de folio es: "+obj.ultimo_folio, null, "Folio", "Aceptar");
-					window.location.reload();
+					navigator.notification.alert("Su Numero de folio es: "+obj.ultimo_folio, window.location.reload(), "Folio", "Aceptar");
+					
 						
                 } 
 			
         }
+		return false;
 	}
 

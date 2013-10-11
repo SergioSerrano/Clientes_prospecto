@@ -74,6 +74,7 @@ function leeresarvas2() {
 	}, function () {
 		return 1;
 	});
+	return false;
 }
 
 function leerReservas() {
