@@ -34,10 +34,10 @@ function guardatempcalif(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13,
 		alert("Error processing SQL: " + err);
 	}, function () {
 		
-		navigator.notification.alert("Guardado temporal numero de folio pendiente", null, "Guardado", "Aceptar");
-		window.location.reload();
+		navigator.notification.alert("Guardado temporal numero de folio pendiente", window.location.reload(), "Guardado", "Aceptar");
+	
 	});
-
+return false;
 }
 
 function guardarHistorial(th, ha, di, pe) {
