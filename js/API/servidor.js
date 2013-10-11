@@ -127,8 +127,8 @@ function guarda_cliente(val1, val2, val3, val4, val5,val6,val7,val8,val9,val10,v
                 { 
                         var msg=ajax.responseText
 						if (msg==1){
-							navigator.notification.alert("Datos guardados correctamente", null, "Guardado", "Aceptar");
-							obtener_ultimo_folio(times);
+							navigator.notification.alert("Datos guardados correctamente", obtener_ultimo_folio(times), "Guardado", "Aceptar");
+							
 							
 						}
                 } 

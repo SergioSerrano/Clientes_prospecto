@@ -188,30 +188,22 @@ $(document).ready(function (e) {
 
 			if (isConnected()) {
 
+				
+				
+				(function () {
 				guarda_cliente(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen, cont);
 				var cont2 = parseInt(cont) + 1;
 				cont = cont2.toString();
 				setCookie("indice", cont, 365);
-				var currentScope = 0; // global scope
-				(function () {
-					var currentScope = 1,
-						one = 'scope1';
-					alert(currentScope);
+					
 					(function () {
-						var currentScope = 2,
-							two = 'scope2';
-						alert(currentScope);
-						(function () {
-							var currentScope = 3,
-								three = 'scope3';
-							alert(currentScope);
-							alert(one + two + three); // climb up the scope chain to get one and two
-						}());
+							leeresarvas2();
+						
 					}());
 				}());
 
 
-				leeresarvas2();
+			
 			} else {
 				guardatempcalif(valnombre, valdireccion, valciudad, valestado, valphone, valemail, valempresa, valpuesto, valcp, valcat, valpro, valinv, valvx, valmgl, valcel, valfel, valwen);
 			}
